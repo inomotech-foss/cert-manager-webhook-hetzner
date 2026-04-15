@@ -32,3 +32,5 @@ cert-manager ACME webhook for Hetzner
 | service.type | string | `"ClusterIP"` | Kubernetes service type of the webhook service. |
 | strategy | object | `{"type":"RollingUpdate"}` | [Kubernetes deployment strategy](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy) for the deployment. |
 | tolerations | list | `[]` | [Kubernetes tolerations](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration) for the webhook. |
+| volumeMounts | list | `[]` | Additional volume mounts to add to the pod. |
+| volumes | list | `[]` | Additional [volumes](https://kubernetes.io/docs/concepts/storage/volumes/) to add to the pod. |
